@@ -86,6 +86,10 @@ form .preview-area {
     overflow: hidden;
 }
 
+.preview-area.active {
+    border: none;
+}
+
 .preview-area .icon {
     color: #7d2ae8;
     font-size: 80px;
@@ -98,10 +102,19 @@ form .preview-area {
     /* display: none; */
 }
 
+.preview-area.active .icon,
+.preview-area.active span {
+    display: none;
+}
+
 .preview-area .thumbnail {
     width: 100%;
     border-radius: 5px;
     display: none;
+}
+
+.preview-area.active .thumbnail {
+    display: block;
 }
 
 form .download-btn {
