@@ -1,6 +1,7 @@
 const urlField = document.querySelector('.field input')
 const previewArea = document.querySelector('.preview-area')
 const imgTag = document.querySelector('.thumbnail')
+const hiddenInput = document.querySelector('.hidden-input')
 
 urlField.addEventListener('keyup', () => {
     let imgUrl = urlField.value
@@ -22,4 +23,4 @@ urlField.addEventListener('keyup', () => {
     }
 })
 
-console.log(imgTag)
+hiddenInput.value = imgTag.src
